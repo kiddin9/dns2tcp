@@ -1,12 +1,12 @@
 CC = gcc
-CFLAGS = -std=c99 -Wall -Wextra -O2
+CFLAGS = -std=c99 -Wall -Wextra -O3
 LIBS = -lm
 SRCS = dns2tcp.c
 OBJS = $(SRCS:.c=.o)
 MAIN = dns2tcp
 DESTDIR = /usr/local/bin
 
-EVCFLAGS = -O2 -fno-strict-aliasing
+EVCFLAGS = -O3 -fno-strict-aliasing
 EVSRCFILE = libev/ev.c
 EVOBJFILE = ev.o
 
